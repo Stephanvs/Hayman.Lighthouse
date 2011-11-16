@@ -1,0 +1,98 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: | #topbar
+:: | .item-header
+:: Page Name 1
+:: Page Name 2
+*/
+@import url(http://fonts.googleapis.com/css?family=PT+Sans);
+@import url(http://fonts.googleapis.com/css?family=Convergence);
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+/* topbar */
+#topbar {
+  background: #222222;
+  border-bottom: solid 4px #f5016e;
+  padding: 15px 20px 13px 20px; 
+  -webkit-box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px;
+  -moz-box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px;
+  box-shadow: rgba(0,0,0,0.0976562) 0 5px 5px; }
+
+  
+@media handheld, only screen and (max-width: 767px) {
+	#topbar { padding: 15px 0px 13px 0px; }
+}
+
+#topbar h1, #topbar h2 {
+  margin-bottom: 0;
+  line-height: 1; }
+#topbar h1 {
+  color: white;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 800; }
+#topbar h1 a { color: #fff; font-weight: bold; }
+#topbar h2 a {
+  text-indent: -99999px;
+  display: block;
+  width: 82px;
+  height: 14px;
+  /*background: url('../images/by-zurb.png');*/ }
+  
+
+#topbar strong { display: block; margin: 0; padding: 0; height: 14px; line-height: 14px; position: relative; bottom: 4px; }
+#topbar strong a {
+  line-height: 14px;
+  color: #fff;
+  font-weight: 500;
+  padding-right: 12px;
+}
+#topbar strong a.button { padding: 4px 10px; font-weight: bold; }
+
+#topbar .hayman-logo-highlight {
+	color: #f5016e; }
+
+/* anchor elements */
+a:hover { color: #f5016e; }
+
+/* headers */
+.item-header { margin-top: 20px; border-bottom: 1px solid #ccc; }
+
+.item-header h1 {
+ font-family : 'PT Sans',sans-serif;
+ color: #181818;
+ font-weight: bold;
+ line-height: 1.25;
+ font-weight: 300; }
+.item-header small {
+	display: inline-block; }
+
+.item-header small:hover {
+  background-color: #f5016e;
+  padding-top: 0px;
+  padding-bottom: 4px;
+  color: white; }
+  
+ nav.options li {
+ 	display: inline-block; margin: 0 2px; }
+
+/* -----------------------------------------
+   Page Name 1
+----------------------------------------- */
+
+
+
+
+
+
+/* -----------------------------------------
+   Page Name 2
+----------------------------------------- */
+
+
