@@ -1,17 +1,27 @@
-﻿@{
+﻿@model Hayman.Lighthouse.ViewModels.ItemInfo
+@{
     ViewBag.Title = "Hayman. Lighthouse";
 }
 
 <div class="row">
 	<div class="twelve columns">
 		
-		<div class="row">
-			<div class="twelve columns">
+		<div class="row page-header">
+			<div class="three columns">
+				<!-- Logo -->
+				<img src="" alt="logo" />
+			</div>
+
+			<div class="nine columns">
 				<div class="item-header">
 					<h1>
-						Item.Name
-						<a href=""><small>{ metaitem }</small></a>
+						@Model.Label
+						<a href=""><small>{ @(Model.MetaItem) }</small></a>
 					</h1>
+				</div>
+				<div class="sub-header">
+					<div class="sub-header-item">Has <a href="">45.321</a> employees worldwide.</div>
+					<div class="sub-header-item">Headquarters located in <a href="">Paris, France</a>.</div>
 				</div>
 			</div>
 		</div>
@@ -25,6 +35,28 @@
 					</ul>
 				</nav>
 			</div>
+		</div>
+
+		<div class="row">
+			<div class="twelve columns">
+				<h4>Details</h4>
+			</div>
+		</div>
+
+		<div class="row">
+		
+			<div class="four columns related">
+				<h4>Related</h4>
+			</div>
+			
+			<div class="four columns properties">
+				<h4>Properties</h4>
+			</div>
+		
+			<div class="four columns environment">
+				<h4>Environment</h4>
+			</div>
+
 		</div>
 
 	</div>
