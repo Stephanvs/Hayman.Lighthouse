@@ -13,11 +13,11 @@ namespace Hayman.Lighthouse
 		public void Configure(ModuleConfiguration moduleConfiguration, ICassetteApplication application)
 		{
 			moduleConfiguration.Add(
-				new DirectorySource<ScriptModule>("Scripts/lib", "Scripts/app")
+				new PerSubDirectorySource<ScriptModule>("Scripts")
 					{
 						FilePattern = "*.js;*.coffee",
 						Exclude = new Regex("-vsdoc\\.js$"), // Excludes the VS documentation files
-						SearchOption = SearchOption.TopDirectoryOnly // The default is AllDirectories
+						SearchOption = SearchOption.AllDirectories
 					});
 		}
 	}

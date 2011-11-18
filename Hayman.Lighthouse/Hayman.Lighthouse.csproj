@@ -96,6 +96,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\app\app.js" />
+    <Content Include="Scripts\app\module.txt" />
+    <Content Include="Scripts\jquery\jquery.js" />
+    <Content Include="Scripts\jquery\module.txt" />
+    <Content Include="Scripts\lib\module.txt" />
     <Content Include="Styles\app.css" />
     <Content Include="Styles\core\forms.css" />
     <Content Include="Styles\core\globals.css" />
@@ -125,7 +129,7 @@
     <Content Include="MIT-LICENSE.txt" />
     <Content Include="README.txt" />
     <Content Include="robots.txt" />
-    <Content Include="Scripts\lib\modernizr-1.7.js" />
+    <Content Include="Scripts\lib\modernizr.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
