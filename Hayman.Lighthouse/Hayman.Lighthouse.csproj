@@ -100,10 +100,11 @@
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
     <Content Include="Scripts\lib\module.txt" />
-    <Content Include="Styles\app.css" />
+    <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\forms.css" />
     <Content Include="Styles\core\globals.css" />
     <Content Include="Styles\core\grid.css" />
+    <Content Include="Styles\core\module.txt" />
     <Content Include="Styles\core\orbit.css" />
     <Content Include="Styles\core\reveal.css" />
     <Content Include="Styles\core\typography.css" />
@@ -153,6 +154,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Item\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Styles\app\app.less" />
+    <None Include="Styles\app\elements.less" />
+    <None Include="Styles\app\pages.less" />
+    <None Include="Styles\app\topbar.less" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

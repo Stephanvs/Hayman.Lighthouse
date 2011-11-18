@@ -2,6 +2,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using Cassette;
 using Cassette.Scripts;
+using Cassette.Stylesheets;
 
 namespace Hayman.Lighthouse
 {
@@ -12,8 +13,18 @@ namespace Hayman.Lighthouse
 	{
 		public void Configure(ModuleConfiguration moduleConfiguration, ICassetteApplication application)
 		{
+			// Stylesheets
 			moduleConfiguration.Add(
-				new PerSubDirectorySource<ScriptModule>("Scripts")
+				new ExternalStylesheetModule("font-ptsans", "http://fonts.googleapis.com/css?family=PT+Sans"),
+				new ExternalStylesheetModule("font-convergence", "http://fonts.googleapis.com/css?family=Convergence"),
+				new DirectorySource<StylesheetModule>("Styles/core", "Styles/app")
+					{
+						FilePattern = "*.css;*.less",
+						SearchOption = SearchOption.TopDirectoryOnly
+					});		
+	
+			// Scripts
+			moduleConfiguration.Add(new PerSubDirectorySource<ScriptModule>("Scripts")
 					{
 						FilePattern = "*.js;*.coffee",
 						Exclude = new Regex("-vsdoc\\.js$"), // Excludes the VS documentation files
