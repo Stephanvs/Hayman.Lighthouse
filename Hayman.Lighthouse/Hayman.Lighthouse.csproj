@@ -100,7 +100,6 @@
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
     <Content Include="Scripts\lib\module.txt" />
-    <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\forms.css" />
     <Content Include="Styles\core\globals.css" />
     <Content Include="Styles\core\grid.css" />
