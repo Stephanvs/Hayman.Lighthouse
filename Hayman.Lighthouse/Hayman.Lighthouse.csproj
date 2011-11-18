@@ -95,6 +95,7 @@
     <Compile Include="ViewModels\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\app\app.js" />
     <Content Include="Styles\app.css" />
     <Content Include="Styles\core\forms.css" />
     <Content Include="Styles\core\globals.css" />
@@ -137,7 +138,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Scripts\app\" />
     <Folder Include="Views\Home\" />
     <Folder Include="Views\MetaItem\" />
   </ItemGroup>
