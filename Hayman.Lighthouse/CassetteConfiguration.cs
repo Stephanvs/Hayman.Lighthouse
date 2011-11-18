@@ -20,7 +20,7 @@ namespace Hayman.Lighthouse
 				new PerSubDirectorySource<StylesheetModule>("Styles")
 					{
 						FilePattern = "*.css;*.less"
-					});		
+					});
 	
 			// Scripts
 			moduleConfiguration.Add(new PerSubDirectorySource<ScriptModule>("Scripts")
