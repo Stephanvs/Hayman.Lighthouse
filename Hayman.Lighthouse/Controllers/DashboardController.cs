@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Hayman.Lighthouse.Controllers
 {
-    public class MetaItemController : Controller
+    public class DashboardController : Controller
     {
-        public ActionResult Create()
+        public ActionResult Index()
         {
             return View();
         }

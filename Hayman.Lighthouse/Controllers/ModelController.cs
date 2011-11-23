@@ -6,11 +6,13 @@ using System.Web.Mvc;
 
 namespace Hayman.Lighthouse.Controllers
 {
-    public class MetaItemController : Controller
+    public class ModelController : Controller
     {
+		[HttpGet]
         public ActionResult Create()
         {
             return View();
         }
+
     }
 }

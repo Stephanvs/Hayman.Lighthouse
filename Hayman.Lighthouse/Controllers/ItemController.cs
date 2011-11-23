@@ -9,7 +9,7 @@ namespace Hayman.Lighthouse.Controllers
 {
     public class ItemController : Controller
     {
-        public ActionResult Index(int? id)
+        public ActionResult Details(int? id)
         {
         	var vm = new ItemInfo(id.HasValue ? id.Value : 0);
         	vm.Label = "Atos";

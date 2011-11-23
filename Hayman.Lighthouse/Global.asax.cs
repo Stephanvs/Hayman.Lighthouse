@@ -23,7 +23,7 @@ namespace Hayman.Lighthouse
 
 			routes.MapRoute(
 				"Default", // Route name
-				"{controller}/{id}", // URL with parameters
+				"{controller}/{action}/{id}", // URL with parameters
 				new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
 			);
 
