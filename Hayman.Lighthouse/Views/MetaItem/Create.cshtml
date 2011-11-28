@@ -1,13 +1,69 @@
 ﻿
 <div class="row page-header">
 	<div class="twelve columns">
+
 		<div class="alert-box">
 			You are currently creating a definition in the English language.
 			<a href="" class="close">&times;</a>
 		</div>
-	</div>
 
-	<div class="twelve columns">
-		
+		<div class="alert-box information">
+			<h4>What are MetaItems?</h4>
+			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+			<a href="" class="close">&times;</a>
+		</div>
+		<form class="nice">
+		<fieldset>
+			<legend>Name your object</legend>
+			<div>
+				<label for="input:name">Name</label>
+				<div class="input">
+					<input class="xlarge input-text" id="input:name" size="30" type="text" /><span>Examples: company, department, employee</span>
+				</div>
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Describe your object</legend>
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Type</th>
+						<th>Sample</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>URL</td>
+						<td>URL</td>
+						<td>http://api.hayman.com/123545245/{your-object}</td>
+					</tr>
+				</tbody>
+			</table>
+			<a class="small white nice button radius">Add another property</a><span>Examples: Author, Distance, Director, Length</span>
+		</fieldset>
+		<fieldset>
+			<legend>Pluralization</legend>
+			<div>
+				<label for="input:singular-noun">Singular Noun</label>
+				<div class="input">
+					You liked
+					<select>
+					  <option selected>a</option>
+					  <option>an</option>
+					</select>
+					<input class="input-text xlarge" id="input:singular-noun" size="30" type="text" />
+				</div>
+			</div>
+			<div>
+				<label for="input:plural-noun">Plural Noun</label>
+				<div class="input">
+					<input class="input-text xlarge" id="input:plural-noun" size="30" type="text" />
+				</div>
+			</div>
+		</fieldset>
+		</form>
+		<a class="nice small radius blue button">Create object</a>
+		<a class="nice small radius white button">Cancel</a>
 	</div>
 </div>
