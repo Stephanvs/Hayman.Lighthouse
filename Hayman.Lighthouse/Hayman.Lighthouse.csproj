@@ -103,8 +103,6 @@
     <Compile Include="ViewModels\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Readme\glimpse.mvc3.readme.txt" />
-    <Content Include="App_Readme\glimpse.readme.txt" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\module.txt" />
     <Content Include="Scripts\jquery\jquery.js" />
