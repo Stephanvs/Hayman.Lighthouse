@@ -113,20 +113,20 @@
     <Content Include="Styles\core\ui.css" />
     <Content Include="Styles\ie.css" />
     <Content Include="Styles\mobile.css" />
-    <Content Include="Styles\themes\foundation\misc\button-gloss.png" />
-    <Content Include="Styles\themes\foundation\misc\button-overlay.png" />
-    <Content Include="Styles\themes\foundation\misc\custom-form-sprites.png" />
-    <Content Include="Styles\themes\foundation\misc\input-bg.png" />
-    <Content Include="Styles\themes\foundation\misc\modal-gloss.png" />
-    <Content Include="Styles\themes\foundation\misc\table-sorter.png" />
-    <Content Include="Styles\themes\foundation\orbit\bullets.jpg" />
-    <Content Include="Styles\themes\foundation\orbit\left-arrow.png" />
-    <Content Include="Styles\themes\foundation\orbit\loading.gif" />
-    <Content Include="Styles\themes\foundation\orbit\mask-black.png" />
-    <Content Include="Styles\themes\foundation\orbit\pause-black.png" />
-    <Content Include="Styles\themes\foundation\orbit\right-arrow.png" />
-    <Content Include="Styles\themes\foundation\orbit\rotator-black.png" />
-    <Content Include="Styles\themes\foundation\orbit\timer-black.png" />
+    <Content Include="Content\themes\foundation\misc\button-gloss.png" />
+    <Content Include="Content\themes\foundation\misc\button-overlay.png" />
+    <Content Include="Content\themes\foundation\misc\custom-form-sprites.png" />
+    <Content Include="Content\themes\foundation\misc\input-bg.png" />
+    <Content Include="Content\themes\foundation\misc\modal-gloss.png" />
+    <Content Include="Content\themes\foundation\misc\table-sorter.png" />
+    <Content Include="Content\themes\foundation\orbit\bullets.jpg" />
+    <Content Include="Content\themes\foundation\orbit\left-arrow.png" />
+    <Content Include="Content\themes\foundation\orbit\loading.gif" />
+    <Content Include="Content\themes\foundation\orbit\mask-black.png" />
+    <Content Include="Content\themes\foundation\orbit\pause-black.png" />
+    <Content Include="Content\themes\foundation\orbit\right-arrow.png" />
+    <Content Include="Content\themes\foundation\orbit\rotator-black.png" />
+    <Content Include="Content\themes\foundation\orbit\timer-black.png" />
     <Content Include="Global.asax" />
     <Content Include="humans.txt" />
     <Content Include="MIT-LICENSE.txt" />
@@ -155,7 +155,6 @@
     <Content Include="Views\Item\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Styles\app\app.less" />
     <None Include="Styles\app\elements.less" />
     <None Include="Styles\app\pages.less" />
     <None Include="Styles\app\topbar.less" />
