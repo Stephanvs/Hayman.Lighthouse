@@ -55,6 +55,9 @@
     <Reference Include="Jurassic">
       <HintPath>..\packages\Jurassic.2.1.1\lib\Jurassic.dll</HintPath>
     </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -103,10 +106,12 @@
     <Compile Include="ViewModels\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\sprites\chosen-sprite.png" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\module.txt" />
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
+    <Content Include="Scripts\lib\chosen.jquery.js" />
     <Content Include="Scripts\lib\module.txt" />
     <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\forms.css" />
@@ -118,6 +123,7 @@
     <Content Include="Styles\core\typography.css" />
     <Content Include="Styles\core\ui.css" />
     <Content Include="Styles\ie.css" />
+    <Content Include="Styles\lib\chosen.css" />
     <Content Include="Styles\mobile.css" />
     <Content Include="Content\themes\foundation\misc\button-gloss.png" />
     <Content Include="Content\themes\foundation\misc\button-overlay.png" />
