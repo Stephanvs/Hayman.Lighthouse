@@ -16,7 +16,7 @@ namespace Hayman.Lighthouse
 			// Stylesheets
 			moduleConfiguration.Add(
 				new ExternalStylesheetModule("font-ptsans", "http://fonts.googleapis.com/css?family=PT+Sans"),
-				new ExternalStylesheetModule("font-convergence", "http://fonts.googleapis.com/css?family=Convergence"),
+				new ExternalStylesheetModule("font-ubuntu", "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic"),
 				new PerSubDirectorySource<StylesheetModule>("Styles")
 					{
 						FilePattern = "*.css;*.less"

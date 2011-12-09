@@ -7,6 +7,7 @@
 	
 	// Fonts
 	Assets.Stylesheets.Reference("font-ptsans");
+	Assets.Stylesheets.Reference("font-ubuntu");
 
 	// Scripts
 	Assets.Scripts.Reference("Scripts/app");
@@ -52,6 +53,30 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="subbar" class="container">
+		<div class="row">
+			<div class="twelve columns">
+				<nav class="breadcrumb">
+					<ul class="menu">
+						<li class="item"><a href="">Dashboard</a></li>
+						<li class="separator">/</li>
+						<li class="item"><a href="">Discover</a></li>
+						<li class="separator">/</li>
+						<li class="item current">
+							<a href="">Atos</a>
+							<ul class="menu">
+								<li class="item"><a href="">Avanade</a></li>
+								<li class="item"><a href="">Cap Gemini</a></li>
+								<li class="item"><a href="">Sogeti</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
 	<!-- container -->
 	<div class="container">
 		@RenderBody()
