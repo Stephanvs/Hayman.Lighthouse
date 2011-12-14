@@ -106,6 +106,8 @@
     <Compile Include="ViewModels\ItemInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\patterns\dark_leather.png" />
+    <Content Include="Content\patterns\white_leather.png" />
     <Content Include="Content\sprites\chosen-sprite.png" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\module.txt" />
