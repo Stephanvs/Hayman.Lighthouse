@@ -1,7 +1,7 @@
 ﻿$(function () {
 
-	var tabs = $('#notification-center .tab');
-	var tabpages = $('#notification-center .tabpage');
+	var tabs = $('.notification-center .tabs li');
+	var tabpages = $('.notification-center .tabpage');
 
 	tabs.on('click', function () {
 		var tab = $(this),

@@ -126,6 +126,7 @@
     <Content Include="Styles\core\reveal.css" />
     <Content Include="Styles\core\typography.css" />
     <Content Include="Styles\core\ui.css" />
+    <Content Include="Styles\dashboard\module.txt" />
     <Content Include="Styles\ie.css" />
     <Content Include="Styles\lib\chosen.css" />
     <Content Include="Styles\mobile.css" />
@@ -184,12 +185,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\app\colors.less" />
-    <Content Include="Styles\app\notification-center.less" />
     <Content Include="Styles\app\subbar.less" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\core\labels.less" />
-    <Content Include="Styles\core\tables.less" />
+    <Content Include="Styles\app\labels.less" />
+    <Content Include="Styles\app\tables.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\app\tabs.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\dashboard\notification-center.less" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

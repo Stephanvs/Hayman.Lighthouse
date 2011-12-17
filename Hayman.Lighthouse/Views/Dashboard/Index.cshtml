@@ -1,5 +1,6 @@
 ﻿@{
 	Assets.Scripts.Reference("Scripts/dashboard");
+	Assets.Stylesheets.Reference("Styles/dashboard");
 }
 
 <div class="row">
@@ -17,29 +18,15 @@
 	<div class="seven columns">
 	</div>
 	<div class="five columns">
-		<div id="notification-center" class="box">
-			<nav class="tabs">
-				<div class="tab active" id="activity">
-					<img class="icon" src="" />
-					<span class="count">2</span>
-					<span class="caption">Activity</span>
-				</div>
-				<div class="tab" id="messages">
-					<img class="icon" src="" />
-					<span class="count">1</span>
-					<span class="caption">Messages</span>
-				</div>
-				<div class="tab" id="actions">
-					<img class="icon" src="" />
-					<span class="count">5</span>
-					<span class="caption">Actions</span>
-				</div>
-				<div class="tab" id="tasks">
-					<img class="icon" src="" />
-					<span class="count">12</span>
-					<span class="caption">Tasks</span>
-				</div>
-			</nav>
+		
+		<div class="notification-center">	
+			<ul class="tabs">
+				<li id="activity" class="active"><span>Activity</span></li>
+				<li id="messages"><span>Messages</span></li>
+				<li id="actions"><span>Actions</span></li>
+				<li id="tasks"><span>Tasks</span></li>
+			</ul>
+
 			<div class="tabpages">
 				<div class="tabpage active" data-tab-id="activity">
 					<table class="condensed-table">
