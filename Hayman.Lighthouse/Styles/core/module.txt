@@ -1,1 +1,9 @@
-﻿*
+﻿reset.less
+variables.less
+mixins.less
+scaffolding.less
+type.less
+forms.less
+tables.less
+patterns.less
+*

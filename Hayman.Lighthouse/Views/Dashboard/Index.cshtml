@@ -4,31 +4,29 @@
 }
 
 <div class="row">
-	<div class="twelve columns">
-		<div class="row page-header">
-			<div class="item-header">
-				<h4>
-					Dashboard
-				</h4>
-			</div>
+	<div class="span9">
+		<h4>Dashboard</h4>
+
+		<div class="alert-message success">
+			The objects you had submitted for approval have been accepted.
+		</div>
+
+		<div class="alert-message info">
+			You have <strong>23 objects</strong> and <strong>42 action types</strong> ready for approval.
 		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="seven columns">
-	</div>
-	<div class="five columns">
+	<div class="span7">
 		
 		<div class="notification-center">	
 			<ul class="tabs">
-				<li id="activity" class="active"><span>Activity</span></li>
-				<li id="messages"><span>Messages</span></li>
-				<li id="actions"><span>Actions</span></li>
-				<li id="tasks"><span>Tasks</span></li>
+				<li id="activity" class="active"><a>Activity</a></li>
+				<li id="messages"><a>Messages</a></li>
+				<li id="actions"><a>Actions</a></li>
+				<li id="tasks"><a>Tasks</a></li>
 			</ul>
 
-			<div class="tabpages">
-				<div class="tabpage active" data-tab-id="activity">
+			<div class="tab-content">
+				<div class="tab-pane active" data-tab-id="activity">
 					<table class="condensed-table">
 						<thead>
 							<tr>
@@ -46,13 +44,13 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="tabpage" data-tab-id="messages">
+				<div class="tab-pane" data-tab-id="messages">
 					This is simple tab 2's content. Now you see it!
 				</div>
-				<div class="tabpage" data-tab-id="actions">
+				<div class="tab-pane" data-tab-id="actions">
 					This is simple tab 3's content. It's, you know...okay.
 				</div>
-				<div class="tabpage" data-tab-id="tasks">
+				<div class="tab-pane" data-tab-id="tasks">
 					This is simple tab 3's content. It's, you know...okay.
 				</div>
 			</div>

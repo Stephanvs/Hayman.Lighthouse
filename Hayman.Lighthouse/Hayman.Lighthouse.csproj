@@ -120,19 +120,10 @@
     <Content Include="Scripts\metaitem\metaitem.js" />
     <Content Include="Scripts\metaitem\module.txt" />
     <Content Include="Styles\app\module.txt" />
-    <Content Include="Styles\core\forms.css" />
-    <Content Include="Styles\core\globals.css" />
-    <Content Include="Styles\core\grid.css" />
     <Content Include="Styles\core\module.txt" />
-    <Content Include="Styles\core\orbit.css" />
-    <Content Include="Styles\core\reveal.css" />
-    <Content Include="Styles\core\typography.css" />
-    <Content Include="Styles\core\ui.css" />
     <Content Include="Styles\dashboard\module.txt" />
-    <Content Include="Styles\ie.css" />
     <Content Include="Styles\lib\chosen.css" />
     <Content Include="Styles\metaitem\module.txt" />
-    <Content Include="Styles\mobile.css" />
     <Content Include="Content\themes\foundation\misc\button-gloss.png" />
     <Content Include="Content\themes\foundation\misc\button-overlay.png" />
     <Content Include="Content\themes\foundation\misc\custom-form-sprites.png" />
@@ -177,9 +168,8 @@
     <Content Include="Views\Item\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\app\elements.less" />
     <Content Include="Styles\app\pages.less" />
-    <Content Include="Styles\app\topbar.less" />
+    <Content Include="Styles\core\topbar.less" />
     <Content Include="Views\Model\Create.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
@@ -187,18 +177,21 @@
     <Content Include="Views\Shared\EditorTemplates\ObjectPropertyEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Styles\app\colors.less" />
-    <Content Include="Styles\app\subbar.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\app\labels.less" />
-    <Content Include="Styles\app\tables.less" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Styles\app\tabs.less" />
+    <Content Include="Styles\core\colors.less" />
+    <Content Include="Styles\core\subbar.less" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\dashboard\notification-center.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Styles\core\forms.less" />
+    <Content Include="Styles\core\mixins.less" />
+    <Content Include="Styles\core\patterns.less" />
+    <Content Include="Styles\core\reset.less" />
+    <Content Include="Styles\core\scaffolding.less" />
+    <Content Include="Styles\core\tables.less" />
+    <Content Include="Styles\core\type.less" />
+    <Content Include="Styles\core\variables.less" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
