@@ -117,6 +117,8 @@
     <Content Include="Scripts\jquery\module.txt" />
     <Content Include="Scripts\lib\chosen.jquery.js" />
     <Content Include="Scripts\lib\module.txt" />
+    <Content Include="Scripts\metaitem\metaitem.js" />
+    <Content Include="Scripts\metaitem\module.txt" />
     <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\forms.css" />
     <Content Include="Styles\core\globals.css" />
@@ -129,6 +131,7 @@
     <Content Include="Styles\dashboard\module.txt" />
     <Content Include="Styles\ie.css" />
     <Content Include="Styles\lib\chosen.css" />
+    <Content Include="Styles\metaitem\module.txt" />
     <Content Include="Styles\mobile.css" />
     <Content Include="Content\themes\foundation\misc\button-gloss.png" />
     <Content Include="Content\themes\foundation\misc\button-overlay.png" />
