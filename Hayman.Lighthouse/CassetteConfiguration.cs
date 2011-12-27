@@ -31,11 +31,10 @@ namespace Hayman.Lighthouse
 			});
 
 			// HtmlTemplates
-			bundles.AddPerSubDirectory<HtmlTemplateBundle>("HtmlTemplates", new FileSearch
-			{
-				Pattern = "*.htm;*.html",
-				SearchOption = SearchOption.AllDirectories,
-			});
+			bundles.AddPerSubDirectory<HtmlTemplateBundle>(
+				"HtmlTemplates",
+				// Assign the jQuery-tmpl processor to the HTML template bundles
+				bundle => bundle.Processor = new KnockoutJQueryTmplPipeline());
 		}
 	}
 }

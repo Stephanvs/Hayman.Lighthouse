@@ -1,1 +1,4 @@
 ﻿*
+
+[references]
+~/Scripts/app

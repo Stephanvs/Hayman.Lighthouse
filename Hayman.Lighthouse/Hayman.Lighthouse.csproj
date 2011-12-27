@@ -129,6 +129,7 @@
     <Content Include="Scripts\dashboard\notification-center.js" />
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
+    <Content Include="Scripts\lib\jquery.tmpl.js" />
     <Content Include="Scripts\lib\knockout-2.0.0.js" />
     <Content Include="Scripts\lib\knockout.mapping.js" />
     <Content Include="Scripts\lib\modal.js" />
@@ -138,7 +139,6 @@
     <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\module.txt" />
     <Content Include="Styles\dashboard\module.txt" />
-    <Content Include="Styles\lib\chosen.css" />
     <Content Include="Styles\metaitem\module.txt" />
     <Content Include="Content\themes\foundation\misc\button-gloss.png" />
     <Content Include="Content\themes\foundation\misc\button-overlay.png" />
@@ -172,6 +172,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Styles\lib\" />
     <Folder Include="Views\Shared\DisplayTemplates\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
 ﻿*
 
 [references]
-~/Scripts/lib
+~/Scripts/app
