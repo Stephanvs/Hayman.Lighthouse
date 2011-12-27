@@ -1,4 +1,6 @@
 ﻿modernizr.js
+knockout-2.0.0.js
+knockout.mapping.js
 *
 
 [references]

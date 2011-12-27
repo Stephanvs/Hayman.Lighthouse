@@ -115,7 +115,8 @@
     <Content Include="Scripts\dashboard\notification-center.js" />
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
-    <Content Include="Scripts\lib\chosen.jquery.js" />
+    <Content Include="Scripts\lib\knockout-2.0.0.js" />
+    <Content Include="Scripts\lib\knockout.mapping.js" />
     <Content Include="Scripts\lib\modal.js" />
     <Content Include="Scripts\lib\module.txt" />
     <Content Include="Scripts\metaitem\metaitem.js" />
