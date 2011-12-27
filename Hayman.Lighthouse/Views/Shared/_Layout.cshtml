@@ -1,15 +1,18 @@
 ﻿@{
 	// Styles
-	Assets.Stylesheets.Reference("Styles/core");
-	Assets.Stylesheets.Reference("Styles/app");
-	Assets.Stylesheets.Reference("Styles/lib");
+	Bundles.Reference("Styles/core");
+	Bundles.Reference("Styles/app");
+	Bundles.Reference("Styles/lib");
 	
 	// Fonts
-	Assets.Stylesheets.Reference("font-ptsans");
-	Assets.Stylesheets.Reference("font-ubuntu");
+	Bundles.Reference("font-ptsans");
+	Bundles.Reference("font-ubuntu");
 
 	// Scripts
-	Assets.Scripts.Reference("Scripts/app");
+	Bundles.Reference("Scripts/app");
+	
+	// Html Templates
+	Bundles.Reference("HtmlTemplates");
 }
 
 <!DOCTYPE html>
@@ -26,7 +29,7 @@
 	<meta name="viewport" content="width=device-width" />
 	<title>Hayman. Lighthouse</title>
 	<!-- Included CSS Files -->
-	@Assets.Stylesheets.Render()
+	@Bundles.RenderStylesheets()
 
 	<!-- IE Fix for HTML5 Tags -->
 	<!--[if lt IE 9]>
@@ -63,12 +66,22 @@
 
 	<!-- container -->
 	<div class="container">
+		@Bundles.RenderHtmlTemplates()
 		@RenderBody()
 	</div>
 	<!-- container -->
 
+	<footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>
+          Designed and built with all the love in the world.
+        </p>
+      </div>
+    </footer>
+
 	<!-- Included JS Files -->
-	@Assets.Scripts.Render()
+	@Bundles.RenderScripts()
 
 </body>
 </html>

@@ -1,0 +1,11 @@
+﻿@model Hayman.Lighthouse.ViewModels.AlertMessageViewModel
+
+<div class="alert-message @(System.Enum.GetName(typeof(Hayman.Lighthouse.ViewModels.MessageType), Model.Type).ToLowerInvariant())">
+	
+	@if (Model.Closable) { 
+		<a href="" class="close">&times;</a>
+	}
+	
+	@Html.Raw(Model.Content)
+
+</div>

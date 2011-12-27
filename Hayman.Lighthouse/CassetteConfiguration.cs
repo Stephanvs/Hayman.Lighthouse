@@ -1,34 +1,41 @@
-using System.IO;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text.RegularExpressions;
-using Cassette;
-using Cassette.Scripts;
+using System.Web;
+using Cassette.Configuration;
 using Cassette.Stylesheets;
+using Cassette.Scripts;
+using System.IO;
+using Cassette.HtmlTemplates;
 
 namespace Hayman.Lighthouse
 {
-	/// <summary>
-	/// Configures the Cassette asset modules for the web application.
-	/// </summary>
 	public class CassetteConfiguration : ICassetteConfiguration
 	{
-		public void Configure(ModuleConfiguration moduleConfiguration, ICassetteApplication application)
+		public void Configure(BundleCollection bundles, CassetteSettings settings)
 		{
 			// Stylesheets
-			moduleConfiguration.Add(
-				new ExternalStylesheetModule("font-ptsans", "http://fonts.googleapis.com/css?family=PT+Sans"),
-				new ExternalStylesheetModule("font-ubuntu", "http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic"),
-				new PerSubDirectorySource<StylesheetModule>("Styles")
-					{
-						FilePattern = "*.css;*.less"
-					});
-	
+			bundles.AddUrlWithAlias<StylesheetBundle>("http://fonts.googleapis.com/css?family=PT+Sans", "font-ptsans");
+			bundles.AddUrlWithAlias<StylesheetBundle>("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic", "font-ubuntu");
+			bundles.AddPerSubDirectory<StylesheetBundle>("Styles", new FileSearch { Pattern = "*.css;*.less" });
+
 			// Scripts
-			moduleConfiguration.Add(new PerSubDirectorySource<ScriptModule>("Scripts")
-					{
-						FilePattern = "*.js;*.coffee",
-						Exclude = new Regex("-vsdoc\\.js$"), // Excludes the VS documentation files
-						SearchOption = SearchOption.AllDirectories
-					});
+
+			//moduleConfiguration.Add(
+			bundles.AddPerSubDirectory<ScriptBundle>("Scripts", new FileSearch
+			{
+			    Pattern = "*.js;*.coffee",
+				Exclude = new Regex("-vsdoc\\.js$"), // Excludes the VS documentation files
+				SearchOption = SearchOption.AllDirectories
+			});
+
+			// HtmlTemplates
+			bundles.AddPerSubDirectory<HtmlTemplateBundle>("HtmlTemplates", new FileSearch
+			{
+				Pattern = "*.htm;*.html",
+				SearchOption = SearchOption.AllDirectories,
+			});
 		}
 	}
 }

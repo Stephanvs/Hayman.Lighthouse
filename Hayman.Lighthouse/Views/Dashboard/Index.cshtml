@@ -7,13 +7,9 @@
 	<div class="span9">
 		<h4>Dashboard</h4>
 
-		<div class="alert-message success">
-			The objects you had submitted for approval have been accepted.
-		</div>
+		@Html.Partial("Partials/AlertMessage", new Hayman.Lighthouse.ViewModels.AlertMessageViewModel { Type = Hayman.Lighthouse.ViewModels.MessageType.Success, Content = "Blablabla", Closable= true })
 
-		<div class="alert-message info">
-			You have <strong>23 objects</strong> and <strong>42 action types</strong> ready for approval.
-		</div>
+		@Html.Partial("Partials/AlertMessage", new Hayman.Lighthouse.ViewModels.AlertMessageViewModel { Type = Hayman.Lighthouse.ViewModels.MessageType.Info, Content = "You have <strong>23 objects</strong> and <strong>42 action types</strong> ready for approval." })
 
 		<div id="modal-from-dom" class="modal hide fade">
 			<div class="modal-header">
