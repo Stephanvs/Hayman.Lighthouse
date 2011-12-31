@@ -21,8 +21,6 @@ namespace Hayman.Lighthouse
 			bundles.AddPerSubDirectory<StylesheetBundle>("Styles", new FileSearch { Pattern = "*.css;*.less" });
 
 			// Scripts
-
-			//moduleConfiguration.Add(
 			bundles.AddPerSubDirectory<ScriptBundle>("Scripts", new FileSearch
 			{
 			    Pattern = "*.js;*.coffee",
@@ -31,10 +29,11 @@ namespace Hayman.Lighthouse
 			});
 
 			// HtmlTemplates
-			bundles.AddPerSubDirectory<HtmlTemplateBundle>(
-				"HtmlTemplates",
+			bundles.Add<HtmlTemplateBundle>(
+				"HtmlTemplates"
+				/*,
 				// Assign the jQuery-tmpl processor to the HTML template bundles
-				bundle => bundle.Processor = new KnockoutJQueryTmplPipeline());
+				bundle => bundle.Processor = new KnockoutJQueryTmplPipeline()*/);
 		}
 	}
 }

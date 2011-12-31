@@ -37,6 +37,7 @@
 	<![endif]-->
 </head>
 <body>
+
 	<div id="topbar">
 		<div  class="container">
 			<div class="row">
@@ -53,12 +54,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="span16">
-					<ul class="breadcrumb">
-						<li><a href="#">Home</a> <span class="divider">/</span></li>
-						<li><a href="#">Middle page</a> <span class="divider">/</span></li>
-						<li><a href="#">Another one</a> <span class="divider">/</span></li>
-						<li class="active">You are here</li>
-					</ul>
+					<ul class="breadcrumb" data-bind="template: { name: 'breadcrumb', foreach: items }"></ul>
 				</div>
 			</div>
 		</div>
@@ -78,11 +74,12 @@
         </p>
       </div>
     </footer>
+	
+	<!-- HTML Templates -->
+	@Bundles.RenderHtmlTemplates()
 
 	<!-- Included JS Files -->
 	@Bundles.RenderScripts()
-
-	<!-- HTML Templates -->
-	@Bundles.RenderHtmlTemplates()
+	
 </body>
 </html>

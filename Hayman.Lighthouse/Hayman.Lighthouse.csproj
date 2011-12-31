@@ -112,7 +112,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Content Include="HtmlTemplates\breadcrumb.htm" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Scripts\lib\URI.js" />
     <Content Include="Styles\lib\module.txt" />
     <Compile Include="ViewModels\AlertMessageViewModel.cs" />
     <Compile Include="ViewModels\ItemInfo.cs" />
@@ -122,7 +124,6 @@
     <Content Include="Content\patterns\dark_leather.png" />
     <Content Include="Content\patterns\white_leather.png" />
     <Content Include="Content\sprites\chosen-sprite.png" />
-    <Content Include="HtmlTemplates\basic.htm" />
     <Content Include="HtmlTemplates\module.txt" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\module.txt" />
