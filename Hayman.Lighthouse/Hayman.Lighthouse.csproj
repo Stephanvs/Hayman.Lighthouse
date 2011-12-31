@@ -114,7 +114,8 @@
     </Compile>
     <Content Include="HtmlTemplates\breadcrumb.htm" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="Scripts\lib\URI.js" />
+    <Content Include="Scripts\lib\backbone.js" />
+    <Content Include="Scripts\lib\underscore.js" />
     <Content Include="Styles\lib\module.txt" />
     <Compile Include="ViewModels\AlertMessageViewModel.cs" />
     <Compile Include="ViewModels\ItemInfo.cs" />
@@ -131,9 +132,6 @@
     <Content Include="Scripts\dashboard\notification-center.js" />
     <Content Include="Scripts\jquery\jquery.js" />
     <Content Include="Scripts\jquery\module.txt" />
-    <Content Include="Scripts\lib\jquery.tmpl.js" />
-    <Content Include="Scripts\lib\knockout-2.0.0.js" />
-    <Content Include="Scripts\lib\knockout.mapping.js" />
     <Content Include="Scripts\lib\modal.js" />
     <Content Include="Scripts\lib\module.txt" />
     <Content Include="Scripts\metaitem\metaitem.js" />

@@ -1,7 +1,6 @@
 ﻿modernizr.js
-jquery.tmpl.js
-knockout-2.0.0.js
-knockout.mapping.js
+underscore.js
+backbone.js
 *
 
 [references]
