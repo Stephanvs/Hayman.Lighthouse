@@ -38,6 +38,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\AjaxMin.4.37.4345.34101\lib\net20\AjaxMin.dll</HintPath>
     </Reference>
+    <Reference Include="AttributeRouting">
+      <HintPath>..\packages\AttributeRouting.1.3.1\lib\net40\AttributeRouting.dll</HintPath>
+    </Reference>
     <Reference Include="Cassette, Version=1.0.0.21170, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Cassette.1.0.0\lib\net40-Client\Cassette.dll</HintPath>
@@ -105,8 +108,6 @@
   <ItemGroup>
     <Compile Include="CassetteConfiguration.cs" />
     <Compile Include="Controllers\DashboardController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ItemController.cs" />
     <Compile Include="Controllers\MetaItemController.cs" />
     <Compile Include="Controllers\ModelController.cs" />
     <Compile Include="Global.asax.cs">
@@ -181,13 +182,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Item\Details.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Styles\app\pages.less" />
     <Content Include="Styles\core\topbar.less" />
     <Content Include="Views\Model\Create.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\MetaItem\Create.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ObjectPropertyEditor.cshtml" />

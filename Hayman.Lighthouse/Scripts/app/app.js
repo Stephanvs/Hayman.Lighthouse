@@ -1,10 +1,4 @@
-﻿$(function () {
-	if (URI(window.location.href).path().toString() !== "/") {
-		window.location = URI(window.location.origin).hash("!" + URI(window.location.href).path().toString()).toString();
-	}
-});
-
-function BreadcrumbItem(name, href, active) {
+﻿function BreadcrumbItem(name, href, active) {
 	var self = this;
 
 	self.name = ko.observable(name);
