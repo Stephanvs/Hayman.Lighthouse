@@ -115,13 +115,14 @@
     </Compile>
     <Content Include="HtmlTemplates\breadcrumb.htm" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="HtmlTemplates\dashboard.htm" />
     <Content Include="HtmlTemplates\metaitem-create.htm" />
     <Content Include="Scripts\models\AppModel.js" />
     <Content Include="Scripts\routers\AppRouter.js" />
     <Content Include="Scripts\routers\module.txt" />
     <Content Include="Scripts\lib\backbone.js" />
     <Content Include="Scripts\lib\underscore.js" />
-    <Content Include="Scripts\views\AppView.js" />
+    <Content Include="Scripts\views\DashboardView.js" />
     <Content Include="Scripts\views\MetaItemView.js" />
     <Content Include="Styles\lib\module.txt" />
     <Compile Include="ViewModels\AlertMessageViewModel.cs" />
