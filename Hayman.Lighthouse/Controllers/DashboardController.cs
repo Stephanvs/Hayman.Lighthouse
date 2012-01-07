@@ -15,5 +15,16 @@ namespace Hayman.Lighthouse.Controllers
         {
             return View();
         }
+
+		[GET("/api/messages")]
+		public JsonResult Messages()
+		{
+			return Json(new
+			{
+			    name = "@Twitter", 
+				action = "Lorum ipsum dolor sit amet"
+			}, 
+			JsonRequestBehavior.AllowGet);
+		}
     }
 }

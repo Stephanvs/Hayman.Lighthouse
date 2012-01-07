@@ -1,19 +1,22 @@
-﻿function BreadcrumbItem(name, href, active) {
-	var self = this;
-
-	self.name = ko.observable(name);
-	self.href = ko.observable(href);
-	self.active = ko.observable(active);
+﻿var app = {
+	models: {},
+	routers: {},
+	views: {}
 };
 
-function BreadcrumbViewModel() {
-	var self = this;
+$(function () {
 
-	// Editable data
-	self.items = ko.observableArray([
-        new BreadcrumbItem("Dashboard", "#!/Dashboard", false),
-        new BreadcrumbItem("Bert", "#!/Bert", true)
-    ]);
-}
+	// Init the main app Routers
+	app.routers.ApplicationRouter = new AppRouter();
 
-ko.applyBindings(new BreadcrumbViewModel());
+	// Enable back button support
+	Backbone.history.start({ pushState: true });
+
+	// Init the Models
+	app.models.AppModel = new AppModel();
+
+	// Init the Views
+	app.views.DashboardView = new DashboardView();
+	app.views.MetaItemView = new MetaItemView();
+
+});

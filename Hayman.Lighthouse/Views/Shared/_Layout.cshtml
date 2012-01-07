@@ -10,6 +10,9 @@
 
 	// Scripts
 	Bundles.Reference("Scripts/app");
+	Bundles.Reference("Scripts/models");
+	Bundles.Reference("Scripts/routers");
+	Bundles.Reference("Scripts/views");
 	
 	// Html Templates
 	Bundles.Reference("HtmlTemplates");
@@ -36,7 +39,7 @@
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body class="approot">
 
 	<div id="topbar">
 		<div  class="container">
@@ -54,7 +57,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="span16">
-					<ul class="breadcrumb" data-bind="template: { name: 'breadcrumb', foreach: items }"></ul>
+					<ul class="breadcrumb"></ul>
 				</div>
 			</div>
 		</div>
@@ -62,6 +65,8 @@
 
 	<!-- container -->
 	<div class="container">
+		<a href="#" class="mi-create">Create new MetaItem</a>
+		
 		@RenderBody()
 	</div>
 	<!-- container -->

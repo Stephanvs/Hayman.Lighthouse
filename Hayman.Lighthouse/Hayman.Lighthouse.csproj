@@ -115,8 +115,14 @@
     </Compile>
     <Content Include="HtmlTemplates\breadcrumb.htm" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="HtmlTemplates\metaitem-create.htm" />
+    <Content Include="Scripts\models\AppModel.js" />
+    <Content Include="Scripts\routers\AppRouter.js" />
+    <Content Include="Scripts\routers\module.txt" />
     <Content Include="Scripts\lib\backbone.js" />
     <Content Include="Scripts\lib\underscore.js" />
+    <Content Include="Scripts\views\AppView.js" />
+    <Content Include="Scripts\views\MetaItemView.js" />
     <Content Include="Styles\lib\module.txt" />
     <Compile Include="ViewModels\AlertMessageViewModel.cs" />
     <Compile Include="ViewModels\ItemInfo.cs" />
@@ -135,8 +141,8 @@
     <Content Include="Scripts\jquery\module.txt" />
     <Content Include="Scripts\lib\modal.js" />
     <Content Include="Scripts\lib\module.txt" />
-    <Content Include="Scripts\metaitem\metaitem.js" />
-    <Content Include="Scripts\metaitem\module.txt" />
+    <Content Include="Scripts\models\MetaItemModel.js" />
+    <Content Include="Scripts\models\module.txt" />
     <Content Include="Styles\app\module.txt" />
     <Content Include="Styles\core\module.txt" />
     <Content Include="Styles\dashboard\module.txt" />
