@@ -79,21 +79,7 @@ jQuery(function ($) {
 			var dashboardView = new DashboardView();
 
 			// Attach the tutorial to the DOM
-			dashboardView.render(function (el) {
-
-				$(this.el).html(this.template());
-
-				if (hash && !route._alreadyTriggered) {
-					// Reset to home, pushState support automatically converts hashes
-					Backbone.history.navigate("", false);
-
-					// Trigger the default browser behavior
-					location.hash = hash;
-
-					// Set an internal flag to stop recursive looping
-					route._alreadyTriggered = true;
-				}
-			});
+			dashboardView.render();
 		},
 
 		metaitemcreate: function () {
@@ -101,11 +87,7 @@ jQuery(function ($) {
 			var route = this;
 			var metaitemcreateView = new MetaItemView();
 
-			metaitemcreateView.render(function (el) {
-				
-				// Reset to home, pushState support automatically converts hashes
-				Backbone.history.navigate("", false);
-			});
+			metaitemcreateView.render();
 
 		},
 
