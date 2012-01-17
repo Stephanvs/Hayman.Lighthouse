@@ -194,8 +194,6 @@
     <Content Include="Styles\app\pages.less" />
     <Content Include="Styles\core\topbar.less" />
     <Content Include="Views\Model\Create.cshtml" />
-    <Content Include="Views\Dashboard\Index.cshtml" />
-    <Content Include="Views\MetaItem\Create.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ObjectPropertyEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
