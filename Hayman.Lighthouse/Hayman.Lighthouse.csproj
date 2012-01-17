@@ -120,8 +120,6 @@
     <Content Include="HtmlTemplates\dashboard.htm" />
     <Content Include="HtmlTemplates\metaitem-create.htm" />
     <Content Include="Scripts\models\AppModel.js" />
-    <Content Include="Scripts\routers\AppRouter.js" />
-    <Content Include="Scripts\routers\module.txt" />
     <Content Include="Scripts\lib\backbone.js" />
     <Content Include="Scripts\lib\underscore.js" />
     <Content Include="Scripts\views\DashboardView.js" />
@@ -194,8 +192,6 @@
     <Content Include="Styles\app\pages.less" />
     <Content Include="Styles\core\topbar.less" />
     <Content Include="Views\Model\Create.cshtml" />
-    <Content Include="Views\Dashboard\Index.cshtml" />
-    <Content Include="Views\MetaItem\Create.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\ObjectPropertyEditor.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -220,6 +216,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Styles\core\footer.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Dashboard\Index.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
