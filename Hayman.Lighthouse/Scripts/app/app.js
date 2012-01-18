@@ -78,7 +78,7 @@ jQuery(function ($) {
 			var route = this;
 			var dashboardView = new DashboardView();
 
-			// Attach the tutorial to the DOM
+			// Attach the view to the DOM
 			dashboardView.render();
 		},
 

@@ -4,6 +4,7 @@
 	template: _.template($('#dashboard').html()),
 
 	initialize: function (args) {
+
 		console.log('DashboardView initialized');
 	},
 
