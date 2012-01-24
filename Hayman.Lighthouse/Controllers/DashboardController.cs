@@ -21,7 +21,7 @@ namespace Hayman.Lighthouse.Controllers
 		{
 			return Json(new
 			{
-			    name = "@Twitter", 
+			    name = "@Twitter",
 				action = "Lorum ipsum dolor sit amet"
 			}, 
 			JsonRequestBehavior.AllowGet);

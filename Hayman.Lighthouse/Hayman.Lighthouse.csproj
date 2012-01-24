@@ -115,10 +115,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Content Include="HtmlTemplates\breadcrumb.htm" />
+    <Content Include="Views\Templates\breadcrumb\bar.htm" />
+    <Content Include="Views\Templates\breadcrumb\item.htm" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="HtmlTemplates\dashboard.htm" />
-    <Content Include="HtmlTemplates\metaitem-create.htm" />
     <Content Include="Scripts\models\AppModel.js" />
     <Content Include="Scripts\lib\backbone.js" />
     <Content Include="Scripts\lib\underscore.js" />
@@ -133,7 +132,8 @@
     <Content Include="Content\patterns\dark_leather.png" />
     <Content Include="Content\patterns\white_leather.png" />
     <Content Include="Content\sprites\chosen-sprite.png" />
-    <Content Include="HtmlTemplates\module.txt" />
+    <Content Include="Views\Templates\dashboard\index.htm" />
+    <Content Include="Views\Templates\metaitem\create.htm" />
     <Content Include="Scripts\app\app.js" />
     <Content Include="Scripts\app\module.txt" />
     <Content Include="Scripts\dashboard\module.txt" />
@@ -219,6 +219,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Dashboard\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\MetaItem\Create.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

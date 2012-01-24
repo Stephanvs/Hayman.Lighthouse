@@ -1,7 +1,7 @@
 ﻿var DashboardView = Backbone.View.extend({
 
 	// Cache the template function.
-	template: _.template($('#dashboard').html()),
+	template: _.template($('#dashboard-index').html()),
 
 	initialize: function (args) {
 

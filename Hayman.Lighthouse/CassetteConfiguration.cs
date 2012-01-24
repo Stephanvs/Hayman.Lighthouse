@@ -18,6 +18,7 @@ namespace Hayman.Lighthouse
 			// Stylesheets
 			bundles.AddUrlWithAlias<StylesheetBundle>("http://fonts.googleapis.com/css?family=PT+Sans", "font-ptsans");
 			bundles.AddUrlWithAlias<StylesheetBundle>("http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic", "font-ubuntu");
+			bundles.AddUrlWithAlias<StylesheetBundle>("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300", "font-opensans");
 			bundles.AddPerSubDirectory<StylesheetBundle>("Styles", new FileSearch { Pattern = "*.css;*.less" });
 
 			// Scripts
@@ -30,7 +31,12 @@ namespace Hayman.Lighthouse
 
 			// HtmlTemplates
 			bundles.Add<HtmlTemplateBundle>(
-				"HtmlTemplates"
+				"Views/Templates",
+				new FileSearch 
+				{
+					Pattern = "*.htm;*.html",
+					SearchOption = SearchOption.AllDirectories
+				}
 				/*,
 				// Assign the jQuery-tmpl processor to the HTML template bundles
 				bundle => bundle.Processor = new KnockoutJQueryTmplPipeline()*/);
